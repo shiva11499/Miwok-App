@@ -12,8 +12,9 @@ public class Word {
     /** Miwok translation for the word */
     private String mMiwokTranslation;
 
-    private Integer mImageResourceId;
+    private Integer mImageResourceId = NO_IMAGE_PROVIDED;
 
+    private static final int NO_IMAGE_PROVIDED = -1;
     /**
      * Create a new Word object.
      * @param defaultTranslation is the word in a language that the user is already familiar with
@@ -46,5 +47,9 @@ public class Word {
     }
 
     public Integer getmImageResourceId() {return mImageResourceId; }
+
+    public boolean hasImage() {
+        return mImageResourceId != NO_IMAGE_PROVIDED;
+    }
 
 }
