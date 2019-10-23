@@ -12,11 +12,11 @@
         android:layout_height="@dimen/list_item_height" />
 
     <LinearLayout
+        android:id="@+id/text_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingLeft="16dp"
-        android:background="@color/category_numbers">
+        android:paddingLeft="16dp">
 
     <TextView
         android:id="@+id/default_text_view"
