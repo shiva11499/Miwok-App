@@ -22,7 +22,7 @@ public class WordAdapter extends ArrayAdapter<Word>  {
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
      * @param words is the list of {@link Word}s to be displayed.
      */
-    public WordAdapter(Context context, ArrayList<Word> words) {
+    public WordAdapter(Context context, ArrayList<Word> words, int colorResourceId) {
         super(context, 0, words);
     }
 
